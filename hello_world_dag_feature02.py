@@ -5,11 +5,11 @@ from airflow.operators.python import PythonOperator
 
 # Funkcja, którą wykona zadanie
 def hello_world():
-    print("Dag executer from --feature01--")
+    print("Dag executer from --feature02--")
 
 # Definicja DAG
 with DAG(
-    dag_id="hello_world_dag_feature01",
+    dag_id="hello_world_dag_feature02",
     start_date=datetime(2025, 11, 14),
     schedule_interval="@daily",  # uruchamiane codziennie
     catchup=False,
