@@ -5,7 +5,7 @@ from airflow.operators.python import PythonOperator
 
 # Funkcja, którą wykona zadanie
 def hello_world():
-    print("Dag executer from --main--")
+    print("Dag executer from --feature01--")
 
 # Definicja DAG
 with DAG(
