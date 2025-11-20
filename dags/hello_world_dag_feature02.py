@@ -11,7 +11,7 @@ def hello_world():
 with DAG(
     dag_id="hello_world_dag_feature02",
     start_date=datetime(2025, 11, 14),
-    schedule_interval="@daily",  # uruchamiane codziennie
+    schedule="@daily",  # uruchamiane codziennie
     catchup=False,
     tags=["example"]
 ) as dag:
